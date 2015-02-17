@@ -1,0 +1,13 @@
+set all&
+set nocompatible
+set runtimepath=
+language messages POSIX
+
+execute 'set runtimepath+=' . expand('<sfile>:p:h:h')
+
+let g:LargeFile           = 10
+let g:LargeFile_size_unit = 1024
+let g:LargeFile_patterns  = '*'
+let g:LargeFile_verbose   = 0
+
+" vim: expandtab softtabstop=2 shiftwidth=2 foldmethod=marker
